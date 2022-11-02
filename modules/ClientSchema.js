@@ -16,15 +16,10 @@ const ClientSchema = new mongoose.Schema({
     organization: {
         type: String,
         required: true,
-        unique: true,
     },
     password: {
         type: String,
         required: true,
-    },
-    isFreelancer: {
-        type: Boolean,
-        default: false,
     },
     tokens: [{
         token: {
